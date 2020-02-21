@@ -1,13 +1,21 @@
 import React from "react";
 import Card from "./Card";
+import styled from "styled-components";
+
+const CardContainer = styled.div`
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width:80%;
+    margin-left:10%;
+`;
 
 const Cards = props => {
-    console.log(props.data);
     return (
-        props.data.map(char => {
-            return (<Card key={char.name} name={char.name} mass={char.mass} />);
-        })
-    )
+                <CardContainer className="card-container">
+                    <Card data={props.data} />
+                </CardContainer>
+        );
 }
 
 export default Cards;
