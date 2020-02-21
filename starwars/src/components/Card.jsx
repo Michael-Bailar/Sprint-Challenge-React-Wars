@@ -5,11 +5,11 @@ import cardImg from "./cardback.jpg";
 const CardDiv = styled.div`
     width:20%;
     margin: 5%;
-    background-color:gray;
+    background-color:white;
     background-image: url(${cardImg});
-    background-size: fit;
+    background-size: cover;
     border-radius: 7px;
-    color:lightgray;
+    color: #443e3e;
     box-shadow: 4px 4px 4px #2b2b2b;
 `;
 
