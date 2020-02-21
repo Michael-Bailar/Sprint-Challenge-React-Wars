@@ -3,7 +3,7 @@ import styled from "styled-components";
 import cardImg from "./cardback.jpg";
 
 const CardDiv = styled.div`
-    width:20%;
+    width:15%;
     margin: 5%;
     background-color:white;
     background-image: url(${cardImg});
@@ -11,6 +11,8 @@ const CardDiv = styled.div`
     border-radius: 7px;
     color: #443e3e;
     box-shadow: 4px 4px 4px #2b2b2b;
+    font-weight: bold;
+    
 `;
 
 const Card = props => {
@@ -19,7 +21,7 @@ const Card = props => {
 
             return (
                 <CardDiv className="card">
-                    <h2>{char.name}</h2>
+                    <p>{char.name}</p>
                     <p>Mass: {char.mass}Kg</p>
                 </CardDiv>
             )
